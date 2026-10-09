@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "site-example",
+  "name": "OFFEN",
+  "status": "template",
+  "goals": [
+    "Referenzprojekte verständlich vorstellen",
+    "Kontaktaufnahme erleichtern"
+  ],
+  "non_goals": [
+    "Kein universeller Seitenbaukasten",
+    "Keine Buchungsplattform im Kern"
+  ],
+  "owners": {
+    "product": "OFFEN",
+    "engineering": "OFFEN",
+    "design": "OFFEN",
+    "editorial": "OFFEN",
+    "security": "OFFEN",
+    "operations": "OFFEN",
+    "compliance": "OFFEN"
+  },
+  "stack": {
+    "frontend": "undecided",
+    "cms": "undecided",
+    "auth": "undecided",
+    "hosting": "undecided",
+    "publication_mode": "undecided"
+  },
+  "voice": {
+    "address": "Sie",
+    "tone": [
+      "klar",
+      "konkret",
+      "freundlich"
+    ],
+    "avoid": [
+      "unbelegte Superlative",
+      "technische Fehlermeldungen ohne Hilfe"
+    ],
+    "example_cta": "Projekt ansehen"
+  },
+  "modules": [
+    "MOD-REFERENCES"
+  ],
+  "budgets": {
+    "public_js_gzip_kb": 30,
+    "public_css_gzip_kb": 40,
+    "initial_transfer_kb": 500,
+    "admin_budget": "OFFEN",
+    "interactive_budget": "OFFEN",
+    "measurement_profile": "360x800; cold cache; before interaction; browser/throttling TBD"
+  },
+  "operations": {
+    "rpo": "OFFEN",
+    "rto": "OFFEN",
+    "backup_owner": "OFFEN"
+  }
+}

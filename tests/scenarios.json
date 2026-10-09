@@ -1,0 +1,141 @@
+{
+  "scenarios": [
+    {
+      "id": "T-PUBLIC",
+      "persona_refs": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P08"
+      ],
+      "rule_refs": [
+        "UX-01",
+        "WEB-01",
+        "SEO-01",
+        "PERF-01"
+      ],
+      "steps": [
+        "Startseite öffnen",
+        "Leistung und passende Referenz finden",
+        "Kontakt erreichen"
+      ],
+      "expected": [
+        "Sinnvolle Reihenfolge und klare Links",
+        "Kerninhalte ohne JavaScript",
+        "Ladebudget eingehalten"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T-ACCESS",
+      "persona_refs": [
+        "P05",
+        "P06",
+        "P07",
+        "P11",
+        "P12"
+      ],
+      "rule_refs": [
+        "A11Y-01",
+        "A11Y-02",
+        "DS-01"
+      ],
+      "steps": [
+        "Tastatur und Screenreader verwenden",
+        "Vergrößerung testen",
+        "Medien und reduzierte Bewegung prüfen"
+      ],
+      "expected": [
+        "Keine Tastaturfalle",
+        "Keine verlorenen Funktionen",
+        "Alternativer Zugang zu wesentlichen Informationen"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T-EDITOR",
+      "persona_refs": [
+        "P09"
+      ],
+      "rule_refs": [
+        "SEC-01",
+        "SEC-02",
+        "UX-01",
+        "TEXT-01"
+      ],
+      "steps": [
+        "Anmelden",
+        "Drei Bilder hinzufügen",
+        "Uploadfehler auslösen",
+        "Entwurf speichern",
+        "Vorschau ansehen"
+      ],
+      "expected": [
+        "Eingaben bleiben",
+        "Autosave veröffentlicht nie",
+        "Rechte gelten serverseitig"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T-SYNC",
+      "persona_refs": [
+        "P10"
+      ],
+      "rule_refs": [
+        "SYNC-01",
+        "SYNC-02",
+        "SYNC-03",
+        "OPS-02"
+      ],
+      "steps": [
+        "Sofort freigeben",
+        "Git-Abgleich wiederholen",
+        "Parallelen Konflikt auslösen",
+        "Deployment scheitern lassen",
+        "Zurücknehmen und Feed abschalten"
+      ],
+      "expected": [
+        "Keine Duplikate",
+        "Kein stilles Überschreiben",
+        "Überlagerung bleibt bis Auslieferungsbestätigung",
+        "Rücknahme bleibt wirksam"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T-DESIGN",
+      "persona_refs": [
+        "P01",
+        "P05",
+        "P06",
+        "P07",
+        "P09",
+        "P11"
+      ],
+      "rule_refs": [
+        "DS-02",
+        "DS-03",
+        "DS-04",
+        "DS-05",
+        "QA-01"
+      ],
+      "steps": [
+        "Musterseite in relevanten Ansichten prüfen",
+        "Langen Titel und fehlendes Bild einsetzen",
+        "Fokuspunkt bei schmalem Ausschnitt prüfen",
+        "Bewegung reduzieren und Textalternative bedienen",
+        "Pflichttest ohne Testvoraussetzung starten"
+      ],
+      "expected": [
+        "Kein unbeabsichtigter Überlauf",
+        "Wichtiger Bildinhalt bleibt erkennbar",
+        "Alle Inhalte zugänglich",
+        "Keine neuen lokalen Designkopien",
+        "Fehlende Testumgebung blockiert Freigabe"
+      ],
+      "status": "planned"
+    }
+  ]
+}

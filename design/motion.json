@@ -1,0 +1,11 @@
+{
+  "motions": [
+    {
+      "id": "MOTION-FADE",
+      "duration_token": "motion.short",
+      "reduced_token": "motion.reduced",
+      "purpose": "optionaler Darstellungswechsel ohne Informationsverlust",
+      "status": "planned"
+    }
+  ]
+}

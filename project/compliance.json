@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "OFFEN",
+  "operator": "OFFEN",
+  "reviewed_at": "",
+  "areas": [
+    {
+      "id": "C01",
+      "topic": "Datenschutz und Datenflüsse",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C02",
+      "topic": "Endgerätespeicherung und Einwilligung",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C03",
+      "topic": "Dienstleister und Drittlandübermittlung",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C04",
+      "topic": "Anbieterinformationen",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C05",
+      "topic": "Medien-, Lizenz- und Persönlichkeitsrechte",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C06",
+      "topic": "Rechtliche Barrierefreiheit",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C07",
+      "topic": "Verbraucher-, Branchen- und Zielmarktpflichten",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    },
+    {
+      "id": "C08",
+      "topic": "Betroffenenrechte, Löschung und Vorfallprozess",
+      "applicability": "open",
+      "reason": "",
+      "owner": "OFFEN",
+      "status": "open",
+      "evidence": []
+    }
+  ]
+}

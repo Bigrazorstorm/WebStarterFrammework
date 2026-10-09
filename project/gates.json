@@ -1,0 +1,52 @@
+{
+  "gates": [
+    {
+      "id": "G0",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G1",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G2",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G3",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G4",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G5",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G6",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    },
+    {
+      "id": "G7",
+      "status": "open",
+      "owner": "OFFEN",
+      "evidence": []
+    }
+  ]
+}

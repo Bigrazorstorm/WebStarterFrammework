@@ -1,0 +1,44 @@
+{
+  "components": [
+    {
+      "id": "CMP-PROJECT-CARD",
+      "status": "planned",
+      "variants": [
+        "compact",
+        "with-image"
+      ],
+      "icon_refs": [
+        "ICON-PROJECT"
+      ],
+      "motion_refs": [
+        "MOTION-FADE"
+      ],
+      "token_refs": [
+        "color.text",
+        "color.surface",
+        "space.md"
+      ],
+      "rule_refs": [
+        "DS-01",
+        "A11Y-01",
+        "PERF-01",
+        "DS-02",
+        "DS-03",
+        "DS-04"
+      ],
+      "test_refs": [
+        "T-DESIGN"
+      ],
+      "allowed_widths": [
+        "column",
+        "wide"
+      ],
+      "required_states": [
+        "default",
+        "focus",
+        "long-text",
+        "missing-image"
+      ]
+    }
+  ]
+}

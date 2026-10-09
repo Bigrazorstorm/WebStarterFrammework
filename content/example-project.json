@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "project-demo",
+  "type": "project",
+  "revision": 1,
+  "status": "draft",
+  "title": "Beispielprojekt – vor Verwendung ersetzen",
+  "summary": "Kurze Beschreibung von Aufgabe, Umsetzung und Ergebnis.",
+  "service_refs": [],
+  "media_refs": [],
+  "body": "Dieses Beispiel enthält keine echten Kundendaten.",
+  "approved_revision": null
+}

@@ -1,0 +1,202 @@
+{
+  "personas": [
+    {
+      "id": "P01",
+      "name": "Interessentin",
+      "context": "Smartphone, neuer Besuch",
+      "goal": "Passende Leistung und Projekt finden",
+      "status": "template",
+      "test_refs": [
+        "T-PUBLIC",
+        "T-DESIGN"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P02",
+      "name": "Unterwegs",
+      "context": "Langsame Verbindung, Zeitdruck",
+      "goal": "Kontakt finden und anrufen",
+      "status": "template",
+      "test_refs": [
+        "T-PUBLIC"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P03",
+      "name": "Auftraggeber",
+      "context": "Vergleicht Anbieter",
+      "goal": "Referenz und Leistungsumfang prüfen",
+      "status": "template",
+      "test_refs": [
+        "T-PUBLIC"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P04",
+      "name": "Wenig technikerfahren",
+      "context": "Braucht klare Begriffe",
+      "goal": "Anfrageweg ohne Hilfe finden",
+      "status": "template",
+      "test_refs": [
+        "T-PUBLIC"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P05",
+      "name": "Geringe Sehschärfe",
+      "context": "Vergrößerung und hoher Kontrast",
+      "goal": "Formular vergrößert bedienen",
+      "status": "template",
+      "test_refs": [
+        "T-ACCESS",
+        "T-DESIGN"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P06",
+      "name": "Screenreadernutzer",
+      "context": "Nicht visuelle Navigation",
+      "goal": "Projekt lesen und Formular absenden",
+      "status": "template",
+      "test_refs": [
+        "T-ACCESS",
+        "T-DESIGN"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P07",
+      "name": "Motorische Einschränkung",
+      "context": "Tastatur oder alternative Eingabe",
+      "goal": "Galerie und Dialog bedienen",
+      "status": "template",
+      "test_refs": [
+        "T-ACCESS",
+        "T-DESIGN"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P08",
+      "name": "Lese-/Aufmerksamkeitsbedarf",
+      "context": "Kurze Schritte, wenig Ablenkung",
+      "goal": "Angebot und nächsten Schritt verstehen",
+      "status": "template",
+      "test_refs": [
+        "T-PUBLIC"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P09",
+      "name": "Redakteur",
+      "context": "Nicht technisch, Smartphone",
+      "goal": "Projekt mit drei Bildern speichern",
+      "status": "template",
+      "test_refs": [
+        "T-EDITOR",
+        "T-DESIGN"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P10",
+      "name": "Betriebsinhaberin",
+      "context": "Veröffentlichungsrecht",
+      "goal": "Freigeben, korrigieren, zurücknehmen",
+      "status": "template",
+      "test_refs": [
+        "T-SYNC"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P11",
+      "name": "Bewegungssensibel",
+      "context": "Reduzierte Bewegung",
+      "goal": "Interaktive Darstellung ohne Kamerafahrt nutzen",
+      "status": "template",
+      "test_refs": [
+        "T-ACCESS",
+        "T-DESIGN"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    },
+    {
+      "id": "P12",
+      "name": "Gehörloser Besucher",
+      "context": "Nutzt Text statt Audiospur",
+      "goal": "Medieninhalt über Untertitel verstehen",
+      "status": "template",
+      "test_refs": [
+        "T-ACCESS"
+      ],
+      "rule_refs": [
+        "GOV-01",
+        "UX-01",
+        "A11Y-01"
+      ],
+      "success": "Ziel ohne fremde Hilfe erreichbar; Status korrekt verstanden; keine verlorenen Eingaben"
+    }
+  ]
+}

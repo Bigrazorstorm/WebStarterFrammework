@@ -1,0 +1,40 @@
+{
+  "id": "MOD-REFERENCES",
+  "version": "0.1.0",
+  "kind": "content",
+  "status": "planned",
+  "dependencies": [],
+  "content_types": [
+    "project"
+  ],
+  "component_refs": [
+    "CMP-PROJECT-CARD"
+  ],
+  "persona_refs": [
+    "P01",
+    "P03",
+    "P09",
+    "P10"
+  ],
+  "rule_refs": [
+    "DATA-01",
+    "DS-01",
+    "UX-01",
+    "SEC-01",
+    "SYNC-01",
+    "PERF-01"
+  ],
+  "test_refs": [
+    "T-PUBLIC",
+    "T-EDITOR",
+    "T-SYNC"
+  ],
+  "permissions": [
+    "draft:own",
+    "review",
+    "publish",
+    "withdraw"
+  ],
+  "migration": "Vor erster produktiver Schemaänderung implementieren",
+  "deactivation": "Navigation entfernen; bestehende URLs bewusst archivieren oder weiterleiten; keine automatische Datenlöschung"
+}

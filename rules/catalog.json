@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "id": "GOV-01",
+      "level": "MUST",
+      "requirement": "Mindestens zehn angepasste Personas vor Implementierung",
+      "owner_role": "product",
+      "document": "docs/05-ui-ux-barrierefreiheit.md",
+      "verification": "Strukturcheck und Review von Aufgaben",
+      "rationale": "Verhindert Entwicklung ohne überprüfbare Nutzerziele"
+    },
+    {
+      "id": "GOV-02",
+      "level": "MUST",
+      "requirement": "Jede Änderung benennt Regeln, Auswirkungen und Nachweise",
+      "owner_role": "engineering",
+      "document": "docs/09-wissen-und-regeln.md",
+      "verification": "PR-Review",
+      "rationale": "Verhindert unbemerkte Regelabweichung"
+    },
+    {
+      "id": "ARCH-01",
+      "level": "MUST",
+      "requirement": "Module haben öffentliche Verträge und keine Abhängigkeitskreise",
+      "owner_role": "engineering",
+      "document": "docs/02-architektur.md",
+      "verification": "Referenzcheck und Architekturreview",
+      "rationale": "Begrenzt Kopplung"
+    },
+    {
+      "id": "DATA-01",
+      "level": "MUST",
+      "requirement": "Stabile IDs und geprüfte Beziehungen verwenden",
+      "owner_role": "engineering",
+      "document": "docs/03-inhalte-und-sync.md",
+      "verification": "Schema-/Referenzprüfung",
+      "rationale": "Verhindert gebrochene Verweise"
+    },
+    {
+      "id": "DATA-02",
+      "level": "MUST",
+      "requirement": "Grundlagenversionen und Folgefreigaben nachvollziehen",
+      "owner_role": "editorial",
+      "document": "docs/03-inhalte-und-sync.md",
+      "verification": "Änderungs- und Veraltungstest",
+      "rationale": "Verhindert veraltete abgeleitete Aussagen"
+    },
+    {
+      "id": "SYNC-01",
+      "level": "MUST",
+      "requirement": "Sofortveröffentlichung prüft anwendbare Regeln vor Anzeige",
+      "owner_role": "engineering",
+      "document": "docs/03-inhalte-und-sync.md",
+      "verification": "Veröffentlichungstest mit ungültigen Eingaben",
+      "rationale": "CI darf nicht zu spät schützen"
+    },
+    {
+      "id": "SYNC-02",
+      "level": "MUST",
+      "requirement": "Idempotenz, Konflikte und Deploymentbestätigung erzwingen",
+      "owner_role": "engineering",
+      "document": "docs/03-inhalte-und-sync.md",
+      "verification": "Sync-Fehlerfallmatrix",
+      "rationale": "Verhindert Verlust und Doppelverarbeitung"
+    },
+    {
+      "id": "SYNC-03",
+      "level": "MUST",
+      "requirement": "Rücknahmen dürfen bei Ausfall nicht wieder erscheinen",
+      "owner_role": "operations",
+      "document": "docs/03-inhalte-und-sync.md",
+      "verification": "Rücknahme plus Feed-Ausfall und Rollback",
+      "rationale": "Verhindert erneute Auslieferung entfernter Inhalte"
+    },
+    {
+      "id": "DS-01",
+      "level": "MUST",
+      "requirement": "Icons, SVGs, Tokens, Varianten und Bewegung zentral referenzieren",
+      "owner_role": "design",
+      "document": "docs/04-designsystem.md",
+      "verification": "Komponentenreview und Referenzcheck",
+      "rationale": "Verhindert Gestaltungsduplikate"
+    },
+    {
+      "id": "UX-01",
+      "level": "MUST",
+      "requirement": "Aufgaben, Hauptaktion und Status sind verständlich",
+      "owner_role": "design",
+      "document": "docs/05-ui-ux-barrierefreiheit.md",
+      "verification": "Aufgabentest mit tatsächlichen Nutzern",
+      "rationale": "Verhindert Orientierungslosigkeit"
+    },
+    {
+      "id": "A11Y-01",
+      "level": "MUST",
+      "requirement": "WCAG 2.2 AA als technisches Ziel nachweisen",
+      "owner_role": "design",
+      "document": "docs/05-ui-ux-barrierefreiheit.md",
+      "verification": "Automatische und manuelle Kriterienprüfung",
+      "rationale": "Ermöglicht zugängliche Nutzung"
+    },
+    {
+      "id": "A11Y-02",
+      "level": "MUST",
+      "requirement": "Medien, Gesten und komplexe Ansichten erhalten Alternativen",
+      "owner_role": "design",
+      "document": "docs/05-ui-ux-barrierefreiheit.md",
+      "verification": "Tastatur-, Textalternativen- und Bewegungstest",
+      "rationale": "Verhindert exklusive Zugangswege"
+    },
+    {
+      "id": "SEC-01",
+      "level": "MUST",
+      "requirement": "Rechte und Sitzungen serverseitig absichern",
+      "owner_role": "security",
+      "document": "docs/06-sicherheit.md",
+      "verification": "Negativtests pro Rolle und Aktion",
+      "rationale": "Verhindert unberechtigte Änderungen"
+    },
+    {
+      "id": "SEC-02",
+      "level": "MUST",
+      "requirement": "Eingaben, Uploads und externe Abrufe begrenzen",
+      "owner_role": "security",
+      "document": "docs/06-sicherheit.md",
+      "verification": "Missbrauchs- und Validierungstests",
+      "rationale": "Verhindert aktive Inhalte und Ressourcenmissbrauch"
+    },
+    {
+      "id": "SEC-03",
+      "level": "MUST",
+      "requirement": "Private Daten und Geheimnisse nicht öffentlich ausliefern",
+      "owner_role": "security",
+      "document": "docs/06-sicherheit.md",
+      "verification": "Artefakt-, Webroot- und Cacheprüfung",
+      "rationale": "Verhindert Datenoffenlegung"
+    },
+    {
+      "id": "SEC-04",
+      "level": "MUST",
+      "requirement": "CI und Deployment mit minimalen Rechten betreiben",
+      "owner_role": "security",
+      "document": "docs/06-sicherheit.md",
+      "verification": "Workflow- und Environmentreview",
+      "rationale": "Begrenzt Lieferkettenrisiken"
+    },
+    {
+      "id": "WEB-01",
+      "level": "MUST",
+      "requirement": "Kerninhalte als semantisches HTML mit stabilen URLs",
+      "owner_role": "engineering",
+      "document": "docs/07-web-seo-performance.md",
+      "verification": "JS-aus und HTTP-Prüfung",
+      "rationale": "Sichert robusten Grundzugang"
+    },
+    {
+      "id": "SEO-01",
+      "level": "MUST",
+      "requirement": "Metadaten, Statuscodes, Canonical und Sitemap korrekt erzeugen",
+      "owner_role": "engineering",
+      "document": "docs/07-web-seo-performance.md",
+      "verification": "Crawl und Templateprüfung",
+      "rationale": "Verhindert widersprüchliche Indexierung"
+    },
+    {
+      "id": "PERF-01",
+      "level": "MUST",
+      "requirement": "Budgets messen und Ressourcen bedarfsgerecht laden",
+      "owner_role": "engineering",
+      "document": "docs/07-web-seo-performance.md",
+      "verification": "Buildbudget und standardisiertes Browserprofil",
+      "rationale": "Verhindert schleichende Aufblähung"
+    },
+    {
+      "id": "PERF-02",
+      "level": "MUST",
+      "requirement": "Module pausieren und geben Ressourcen wieder frei",
+      "owner_role": "engineering",
+      "document": "docs/02-architektur.md",
+      "verification": "Wiederholter Seitenwechsel und Speichermessung",
+      "rationale": "Verhindert versteckte Rechenlast"
+    },
+    {
+      "id": "TEXT-01",
+      "level": "MUST",
+      "requirement": "Website besitzt Sprachprofil und sachlich geprüfte Texte",
+      "owner_role": "editorial",
+      "document": "docs/07-web-seo-performance.md",
+      "verification": "Textprüfung und redaktionelles Review",
+      "rationale": "Sichert konsistente Ansprache"
+    },
+    {
+      "id": "MEDIA-01",
+      "level": "MUST",
+      "requirement": "Medien haben Herkunft, Rechte und passende Fassung",
+      "owner_role": "editorial",
+      "document": "docs/03-inhalte-und-sync.md",
+      "verification": "Medieninventar und Releaseprüfung",
+      "rationale": "Verhindert unpassende oder ungeklärte Veröffentlichung"
+    },
+    {
+      "id": "OPS-01",
+      "level": "MUST",
+      "requirement": "Nur geprüfte Artefakte veröffentlichen und Rollback testen",
+      "owner_role": "operations",
+      "document": "docs/08-qualitaet-betrieb.md",
+      "verification": "Release- und Rollbacknachweis",
+      "rationale": "Verhindert ungeprüfte Produktion"
+    },
+    {
+      "id": "OPS-02",
+      "level": "MUST",
+      "requirement": "Laufzeitdaten sichern und Wiederherstellung erproben",
+      "owner_role": "operations",
+      "document": "docs/08-qualitaet-betrieb.md",
+      "verification": "Praktischer Restore mit RPO/RTO",
+      "rationale": "Git allein sichert nicht die Redaktion"
+    },
+    {
+      "id": "OPS-03",
+      "level": "MUST",
+      "requirement": "Sync, Backups, Kosten und externe Quellen überwachen",
+      "owner_role": "operations",
+      "document": "docs/08-qualitaet-betrieb.md",
+      "verification": "Ausfallsimulation und Alarmprüfung",
+      "rationale": "Verhindert unbemerkten Betriebsstillstand"
+    },
+    {
+      "id": "DS-02",
+      "level": "MUST",
+      "requirement": "Seitentypen definieren Hierarchie, Breiten und Rhythmus",
+      "owner_role": "design",
+      "document": "docs/12-seitengestaltung.md",
+      "verification": "Seitentyp- und Persona-Review",
+      "rationale": "Verhindert beliebige Seitenkomposition"
+    },
+    {
+      "id": "DS-03",
+      "level": "MUST",
+      "requirement": "Medienbausteine erfüllen gemeinsamen Vertrag",
+      "owner_role": "design",
+      "document": "docs/13-medienvertrag.md",
+      "verification": "Medien-, Fokuspunkt- und Fehlerfalltests",
+      "rationale": "Sichert konsistente zugängliche Medien"
+    },
+    {
+      "id": "DS-04",
+      "level": "MUST",
+      "requirement": "Musterseite deckt alle ausgelieferten Varianten ab",
+      "owner_role": "design",
+      "document": "docs/14-designabnahme.md",
+      "verification": "Abdeckungsmatrix und manuelle Abnahme",
+      "rationale": "Verhindert ungeprüfte Sonderzustände"
+    },
+    {
+      "id": "DS-05",
+      "level": "MUST",
+      "requirement": "Generierte Markenwerte und neue Designabweichungen prüfen",
+      "owner_role": "engineering",
+      "document": "docs/14-designabnahme.md",
+      "verification": "Generatorvergleich und Quellenprüfung",
+      "rationale": "Verhindert schleichende Gestaltungsduplikate"
+    },
+    {
+      "id": "QA-01",
+      "level": "MUST",
+      "requirement": "Fehlende Umgebung darf Pflichtprüfung nicht erfolgreich überspringen",
+      "owner_role": "engineering",
+      "document": "docs/14-designabnahme.md",
+      "verification": "Negativtest mit fehlender Testvoraussetzung",
+      "rationale": "Verhindert falsche Releasefreigabe"
+    },
+    {
+      "id": "COMP-01",
+      "level": "MUST",
+      "requirement": "Compliance-Anwendbarkeit je Projekt und relevanter Änderung klären",
+      "owner_role": "compliance",
+      "document": "docs/15-compliance.md",
+      "verification": "Begründetes Register und fachliche Prüfung",
+      "rationale": "Gesetzliche Pflichten sind nicht optional"
+    },
+    {
+      "id": "COMP-02",
+      "level": "MUST",
+      "requirement": "Datenschutz, Speicherung und Dienste vor Aktivierung absichern",
+      "owner_role": "compliance",
+      "document": "docs/15-compliance.md",
+      "verification": "Dateninventar und Einwilligungs-/Netzwerktests",
+      "rationale": "Gesetzliche Pflichten sind nicht optional"
+    },
+    {
+      "id": "COMP-03",
+      "level": "MUST",
+      "requirement": "Keine Veröffentlichung mit offenen anwendbaren Rechtspflichten",
+      "owner_role": "compliance",
+      "document": "docs/15-compliance.md",
+      "verification": "Compliance-Releasegate und fachliche Nachweise",
+      "rationale": "Gesetzliche Pflichten sind nicht optional"
+    }
+  ]
+}
