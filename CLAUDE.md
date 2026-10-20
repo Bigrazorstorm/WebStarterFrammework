@@ -62,6 +62,17 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
+## 5. Agents und Skills (ECC)
+
+Ausgewählte Agents und Skills aus ECC liegen in `.claude/agents/` und `.claude/skills/`. Auswahl, Herkunft und Grenzen stehen in `decisions/0002-ecc-agentenwerkzeuge.md`.
+
+- Planung größerer Änderungen: `planner`, Architekturfragen: `architect`; vor eigener Lösung `search-first`.
+- Umsetzung: `tdd-workflow` bzw. `tdd-guide`; vor Abschluss `verification-loop`.
+- Review: `code-reviewer`, `silent-failure-hunter`; bei Eingaben, Rechten, Uploads oder Geheimnissen `security-reviewer` und `security-review`.
+- Oberflächen: `a11y-architect` und `accessibility`; öffentliche Seiten: `seo-specialist` und `seo`; Budgets: `performance-optimizer`.
+
+ECC-Vorgaben (z. B. feste Abdeckungsquoten, Commit-Format) gelten nicht, wenn Regelkatalog oder `AGENTS.md` anderes festlegen. Agent-Ergebnisse sind keine Testnachweise.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.

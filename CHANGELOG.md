@@ -1,5 +1,9 @@
 # Änderungen
 
+## Unveröffentlicht
+
+`CLAUDE.md` mit Verhaltensleitlinien für KI-Assistenten ergänzt. Neun Agents und sieben Skills aus ECC 2.2.3 nach `.claude/` übernommen (Vorschlag ADR-002, Review offen). Keine ECC-Regeln oder Hooks. Keine Regeländerung im Katalog.
+
 ## 0.3.0 · 2026-10-09
 
 Compliance verpflichtend ergänzt: acht Prüffelder, fachliche Verantwortung, erneute Prüfung bei Änderungen und formales Releasegate. Insgesamt 33 Muss-Regeln. Keine fertigen betriebsspezifischen Rechtstexte.

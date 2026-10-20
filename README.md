@@ -44,6 +44,7 @@ Der erste Befehl prüft die Integrität dieses Starters. Der zweite blockiert ab
 | `design/`, `modules/`, `content/` | Verknüpfte Beispiele für die Umsetzung |
 | `templates/` | Vorlagen für Module, Entscheidungen, Releases und Ausnahmen |
 | `.github/` | Strukturprüfung und Pull-Request-Vorlage |
+| `.claude/` | Ausgewählte KI-Agents und Skills aus ECC, siehe `decisions/0002-ecc-agentenwerkzeuge.md` |
 
 ## Festgelegt und offen
 
